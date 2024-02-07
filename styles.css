@@ -134,67 +134,17 @@ h1 {
 
 }
 
-@media screen and (max-width: 650px) {
-
-    .header_wrapper img {
-    
-        display: none;
-        
-        
-    
-    }
-
-    .header-cont {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .ham-wrapper {
-        display: flex;
-        justify-content: center;
-        padding-bottom: 20px;
-    }
-
-    .header_wrapper {
-        max-width: 1600px;
-        
-        margin: 0 auto;
-        
-        
-        padding-bottom: 20px;
-        padding-top: 20px;
-    }
-
-    h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.5rem;
-        margin-bottom: 0;
-        text-align: center;
-    
-    }
-
-    .subheading {
-        font-family: 'lora', serif;
-        font-size: 1rem;
-        padding-top: 7.5px;
-        padding-bottom: 0px;
-        letter-spacing: .3rem;
-        text-align: center;
-        
-    
-    }
-
-    .map {
-        width: 100%;
-        height: 350px;
-        margin-bottom: 75px;
-        margin-top: 35px;
-        
-    }
-    
+.date-title {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
 }
+
+.date {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+}
+
+
 
 @media screen and (min-width: 650px) {
     
@@ -218,15 +168,9 @@ h1 {
 
 }
 
-.date-title {
-    font-family: 'Lora', serif;
-    font-size: 1.2rem;
-}
 
-.date {
-    font-family: 'Lora', serif;
-    font-size: 3rem;
-}
+
+
 
 .counter-wrapper {
     display: flex;
@@ -260,7 +204,7 @@ h2 {
 
 button {
     background-color: #BBA53D;
-    font-family: 'Allura', cursive;
+    font-family: 'Great Vibes', cursive;
     font-size: 1.8rem;
     padding: 5px 30px;
     margin-top: 5px;
@@ -574,7 +518,7 @@ textarea {
     gap: 35px;
   }
   
-  /* The navigation menu links */
+  /* The navigation menu links    font-family: 'Allura', cursive; */
   .sidenav a {
     font-family: 'Lora', serif;
     
@@ -611,3 +555,94 @@ textarea {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
+
+  @media screen and (max-width: 650px) {
+
+    .header_wrapper img {
+    
+        display: none;
+        
+        
+    
+    }
+
+    .header-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .ham-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .header_wrapper {
+        max-width: 1600px;
+        
+        margin: 0 auto;
+        
+        
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        text-align: center;
+    
+    }
+
+    .subheading {
+        font-family: 'lora', serif;
+        font-size: 1rem;
+        padding-top: 7.5px;
+        padding-bottom: 0px;
+        letter-spacing: .3rem;
+        text-align: center;
+        
+    
+    }
+
+    .map {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 75px;
+        margin-top: 35px;
+        
+    }
+
+    .date-title {
+        font-family: 'Lora', serif;
+        font-size: 1rem;
+    }
+
+    .date {
+        font-family: 'Lora', serif;
+        font-size: 2rem;
+    }
+    
+    button {
+        background-color: #BBA53D;
+        font-family: 'lora', serif;
+        font-size: 1.2rem;
+        padding: 5px 30px;
+        margin-top: 5px;
+        cursor: pointer;
+        
+    }
+    
+    button:hover {
+        background-color: #bba63dd2;
+        font-family: 'Lora', serif;
+        font-size: 1.5rem;
+        padding: 5px 30px;
+        margin-top: 5px;
+        cursor: pointer;
+        
+    }
+}
