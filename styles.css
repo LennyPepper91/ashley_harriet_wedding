@@ -564,7 +564,7 @@ textarea {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #ececec; 
+    background-color: #F9F8F8; 
     overflow-x: hidden; 
     padding-top: 145px; 
     transition: 0.5s; 
@@ -580,7 +580,7 @@ textarea {
     
     text-decoration: none;
     font-size: 1.3rem;
-    color: #818181;
+    color: #BBA53D;
     display: block;
     transition: 0.3s;
     letter-spacing: 1px;
