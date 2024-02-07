@@ -1,0 +1,613 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.airport-list a {
+    color: black; 
+    text-decoration: none; 
+    text-align: center;
+}
+
+.airport-list a:hover {
+    color: rgba(0, 0, 0, 0.849); 
+}
+
+
+.airport a:visited {
+    color: inherit;
+}
+
+.header_wrapper {
+    max-width: 1600px;
+    
+    margin: 0 auto;
+    
+    
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+.subheading {
+    font-family: 'lora', serif;
+    font-size: 1.3rem;
+    padding-top: 15px;
+    padding-bottom: 75px;
+    letter-spacing: .3rem;
+    text-align: center;
+    
+
+}
+
+.ham-wrapper {
+    display: none;
+    justify-content: center;
+}
+
+.ham-icon {
+    height: auto;
+    width: 35px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    display: none;
+    
+    
+    
+    margin: 0 auto;
+}
+
+.slide-nav {
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    z-index: 9999;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    padding: 0;
+    
+    
+    gap: 4rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-family: 'Lora', serif;
+    color: black;
+    
+}
+
+ul li a:hover {
+    
+    color: rgba(0, 0, 0, 0.733);
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+
+.header_wrapper img {
+    
+    padding: 0;
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+    
+    
+
+}
+
+@media screen and (max-width: 650px) {
+
+    .header_wrapper img {
+    
+        display: none;
+        
+        
+    
+    }
+
+    .header-cont {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .ham-wrapper {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    .header_wrapper {
+        max-width: 1600px;
+        
+        margin: 0 auto;
+        
+        
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5rem;
+        margin-bottom: 0;
+        text-align: center;
+    
+    }
+
+    .subheading {
+        font-family: 'lora', serif;
+        font-size: 1rem;
+        padding-top: 7.5px;
+        padding-bottom: 0px;
+        letter-spacing: .3rem;
+        text-align: center;
+        
+    
+    }
+
+    .map {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 75px;
+        margin-top: 35px;
+        
+    }
+    
+}
+
+@media screen and (min-width: 650px) {
+    
+
+   
+    
+}
+
+
+
+
+.date-wrapper {
+    padding-top: 100px;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding-bottom: 100px;
+
+}
+
+.date-title {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+}
+
+.date {
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+}
+
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('counter.jpg');
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    margin: 0 auto;
+    margin-bottom: 150px;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.counter-wrapper p {
+    max-width: 1200px;
+    font-family: 'lora', serif;
+    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: #BBA53D;
+    font-family: 'Allura', cursive;
+    font-size: 1.8rem;
+    padding: 5px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #bba63dd2;
+    font-family: 'Allura', cursive;
+    font-size: 1.8rem;
+    padding: 5px 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+.number-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding-top: 30px;
+}
+
+.box {
+    background-color: white;
+    height: 70px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-label {
+    font-family: 'Lora', serif;
+    color: white;
+
+}
+
+.box span {
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    
+    
+    
+    text-align: center;
+    
+}
+
+.travel-title {
+    
+}
+
+footer {
+    height: 30px;
+    background-color: antiquewhite;
+}
+
+.rspv-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 75px;
+}
+
+
+.form-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+    padding-bottom: 25px;
+    padding-top: 50px;
+}
+
+label {
+    font-family: 'Lora', serif;
+}
+
+.form-title p {
+    font-family: 'Lora', serif;
+    text-align: center;
+    
+   
+}
+
+.map-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.map {
+    width: 100%;
+    height: 650px;
+    margin-bottom: 75px;
+    margin-top: 35px;
+    
+}
+
+.map-airports {
+    width: 100%;
+    height: 650px;
+    margin-bottom: 75px;
+    margin-top: 35px;
+
+}
+
+.map-title {
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.4rem;
+    padding-top: 50px;
+    
+    
+
+}
+
+.form-cont {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+input {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+label {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+}
+
+textarea {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: 'Lora', serif;
+    color: rgb(0, 0, 0);
+    resize: none;
+    height: 200px;
+}
+
+.travel-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 75px;
+    
+}
+
+.garda {
+    width: 600px;
+    height: 100%;
+}
+
+.travel {
+    display: flex;
+    gap: 50px;
+}
+
+.travel p {
+    font-family: 'Lora', serif;
+    padding-top: 2px;
+    line-height: 1.5;
+    margin-top: 0;
+
+}
+
+.airports-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 75px;
+
+}
+
+.airport-list {
+    
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lora', serif;
+    gap: 10px;
+    font-weight:bolder;
+    padding-top: 15px;
+    
+}
+
+.airports {
+    text-align: center;
+}
+
+
+.more-info-btn {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+    
+    .mobile-padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1250px) {
+    .travel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .garda {
+        width: 100%;
+        height: 100%;
+    }
+    
+   
+   
+
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+    
+    .airport-list {
+    
+        display: flex;
+        flex-direction: column;
+        font-family: 'Lora', serif;
+        gap: 10px;
+        font-weight:bolder;
+        padding-top: 15px;
+        
+    }
+
+    .number-wrapper {
+        gap: 10px;
+    }
+
+    .box {
+        background-color: white;
+        height: 45px;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .box span {
+        font-family: 'Lora', serif;
+        font-size: 1.2rem;
+    
+    }
+   
+
+    
+}
+
+
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #ececec; 
+    overflow-x: hidden; 
+    padding-top: 145px; 
+    transition: 0.5s; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    font-family: 'Lora', serif;
+    
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    letter-spacing: 1px;
+  }
+  
+  
+  .sidenav a:hover {
+    color: #ffffff;
+  }
+  
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

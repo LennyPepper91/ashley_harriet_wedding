@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley & Harriet | Lake Garda Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="rspv.html">RSPV</a>
+        <a href="travel.html">Travel</a>
+        
+      </div>
+
+
+    <header>
+        
+        <div class="header_wrapper">
+            <div class="header-cont mobile-padding">
+                <img src="ham-two.svg" class="ham-icon" onclick="openNav()" onclick="closeNav()">
+                <div class="title-wrapper">
+                    <h1>Ashley & Harriet</h1>
+                    <span class="subheading">LAKE GARDA WEDDING</span>
+                    
+                </div>
+                
+                <img src="person.png" class="ham-icon">
+            </div>
+
+            
+    <nav>
+        <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rspv.html">RSVP</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+            
+    
+        </div>
+
+        <div class="ham-wrapper">
+            <img src="ham-two.svg" class="ham-icon" onclick="openNav()" onclick="closeNav()">
+            </div>
+
+    
+
+    </header>
+    
+    
+
+    </div>
+
+    <section style="max-width: 1600px; margin: 0 auto;">
+        <div style="padding: 41.67% 0 0 0; position: relative; max-width: 100%; margin: 0 auto;">
+            <iframe src="https://player.vimeo.com/video/745561714?h=2544249cb6&amp;autoplay=1&amp;loop=1&amp;autopause=0&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                title="videoplayback (online-video-cutter.com).mp4">
+            </iframe>
+        </div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    </section>
+
+    <section class="date-wrapper">
+        <span class="date-title">Save The Date</span>
+        <span class="date">May 10, 2024</span>
+
+        <button id="confettiButton">
+            RSPV
+        </button>
+    </section>
+
+    <section class="counter-wrapper mobile-padding">
+
+        <h2>Our Big Day</h2>
+        <p>We're so excited to see you at our wedding! We can't think of a better way to start our new journey than with all of you!</p>
+
+        <div class="number-wrapper">
+            <div class="box-container">
+                <div class="box days">
+                    <span id="days">00</span>  
+                </div>
+                <span class="box-label">Days</span>
+            </div>
+
+            <div class="box-container">
+                <div class="box hours">
+                    <span id="hours">00</span>  
+                </div>
+                <span class="box-label">Hours</span>
+            </div>
+
+            <div class="box-container">
+                <div class="box minutes">
+                    <span id="minutes">00</span>  
+                </div>
+                <span class="box-label">Minutes</span>
+            </div>
+
+            <div class="box-container">
+                <div class="box seconds">
+                    <span id="seconds">00</span>  
+                </div>
+                <span class="box-label">Seconds</span>
+            </div>
+            
+           
+        
+        </div>
+
+        
+    </section>
+
+    <script>
+        // Set the date
+        const countDownDate = new Date("May 10, 2024 00:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const x = setInterval(function() {
+            // Get the current date and time
+            const now = new Date().getTime();
+
+            // Calculate the remaining time
+            const distance = countDownDate - now;
+
+            // Calculate days, hours, minutes, and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the countdown
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+            // countdown end
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerText = "00";
+                document.getElementById("hours").innerText = "00";
+                document.getElementById("minutes").innerText = "00";
+                document.getElementById("seconds").innerText = "00";
+                
+            }
+        }, 1000);
+
+        // Define the confetti function
+function confetti() {
+    // Implement your confetti logic here
+    console.log("Confetti time!");
+    // You can use a library or your own logic to create confetti effects
+}
+
+// Add a click event listener to the button
+document.getElementById("confettiButton").addEventListener("click", function() {
+    // Call the confetti function when the button is clicked
+    confetti();
+});
+
+/* Nav width */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "515px";
+}
+
+/* Set nav to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <footer>
+        
+    </footer>
+
+  
+    
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashley & Harriet | Lake Garda Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="rspv.html">RSPV</a>
+        <a href="travel.html">Travel</a>
+        
+      </div>
+
+    <header>
+        
+        <div class="header_wrapper">
+      <div class="header-cont mobile-padding">
+                <img src="ham-two.svg" class="ham-icon" onclick="openNav()" onclick="closeNav()">
+                <div class="title-wrapper">
+                    <h1>Ashley & Harriet</h1>
+                    <span class="subheading">LAKE GARDA WEDDING</span>
+                </div>
+                <img src="person.png" class="ham-icon">
+            </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rspv.html">RSVP</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+            
+    
+        </div>
+
+    
+
+    </header>
+
+    <section class="rspv-wrapper mobile-padding">
+        <div class="form-title">
+        <h3>RSPV</h3>
+        <p>We're hoping to make this wedding an enjoyable experience for everyone. Please let us know if you have any special accommodations or have any question for us! </p>
+        </div>
+        <form action="#" method="post">
+            <div class="form-cont">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+           
+            <div class="form-cont">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+    
+            
+            <textarea id="message" name="message" rows="4" placeholder="Please leave a message..." required></textarea>
+    
+            
+        </form>
+        <button style="width: 100%;" type="submit" id="confettiButton">Send</button>
+    </section>
+ 
+    <section class="map-wrapper mobile-padding">
+        <span class="map-title">Malcesine, Italy</span>
+        <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.252749179719!2d10.805711777587941!3d45.766124713241254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47821ea850851729%3A0xa27d023d8d5615d3!2sCastle%20of%20Malcesine!5e0!3m2!1sen!2suk!4v1706788719156!5m2!1sen!2suk"
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+    </section>
+
+   
+
+    <footer>
+        
+    </footer>
+
+    <script>
+
+        function confetti() {
+    // Implement your confetti logic here
+    console.log("Confetti time!");
+    // You can use a library or your own logic to create confetti effects
+}
+
+// Add a click event listener to the button
+document.getElementById("confettiButton").addEventListener("click", function() {
+    // Call the confetti function when the button is clicked
+    confetti();
+});
+
+
+        /* Nav width */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "515px";
+}
+
+/* Set nav to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+ 
+    
+</body>
+</html>
