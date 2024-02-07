@@ -1,3 +1,25 @@
+
+:root {
+    /* Colours */
+    --primary-color: #007bff;
+    --secondary-color: #BBA53D;
+    --secondary-hover-color: #D2C274;
+    --accent-color: #ffc107;
+
+    /* Font pairings */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Lora', serif;
+    
+
+
+  }
+
+
+
+
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -46,7 +68,7 @@ body {
     padding-top: 100px;
 }
 .subheading {
-    font-family: 'lora', serif;
+    font-family: var(--body-font);
     font-size: 1.3rem;
     padding-top: 15px;
     padding-bottom: 75px;
@@ -97,7 +119,7 @@ ul {
 
 ul li {
     list-style-type: none;
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     color: black;
     
 }
@@ -116,7 +138,7 @@ ul li a {
 
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--heading-font);
     font-size: 4rem;
     margin-bottom: 0;
     text-align: center;
@@ -135,12 +157,12 @@ h1 {
 }
 
 .date-title {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     font-size: 1.2rem;
 }
 
 .date {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     font-size: 3rem;
 }
 
@@ -189,7 +211,7 @@ h1 {
 
 h2 {
     color: white;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--heading-font);
     font-size: 2.5rem;
     text-align: center;
     margin: 10px;
@@ -197,15 +219,15 @@ h2 {
 
 .counter-wrapper p {
     max-width: 1200px;
-    font-family: 'lora', serif;
+    font-family: var(--body-font);
     text-align: center;
     color: white;
 }
 
 button {
-    background-color: #BBA53D;
-    font-family: 'Great Vibes', cursive;
-    font-size: 1.8rem;
+    background-color: var(--secondary-color);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
     padding: 5px 30px;
     margin-top: 5px;
     cursor: pointer;
@@ -213,9 +235,9 @@ button {
 }
 
 button:hover {
-    background-color: #bba63dd2;
-    font-family: 'Allura', cursive;
-    font-size: 1.8rem;
+    background-color: var(--secondary-hover-color);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
     padding: 5px 30px;
     margin-top: 5px;
     cursor: pointer;
@@ -249,19 +271,19 @@ button:hover {
 }
 
 .box-label {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     color: white;
 
 }
 
 .box span {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     font-size: 2rem;
 
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--heading-font);
     font-size: 1.7rem;
     
     
@@ -304,11 +326,11 @@ form {
 }
 
 label {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
 }
 
 .form-title p {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     text-align: center;
     
    
@@ -336,7 +358,7 @@ label {
 }
 
 .map-title {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     display: flex;
     justify-content: center;
     
@@ -354,6 +376,7 @@ label {
 }
 
 input {
+    font-family: var(--body-font);
     font-size: 1.2rem;
     border: none;
     outline: none;
@@ -366,13 +389,13 @@ label {
     padding-bottom: 0;
     margin-bottom: 0;
     font-size: 1.2rem;
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
 }
 
 textarea {
     margin-top: 20px;
     font-size: 1.2rem;
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     color: rgb(0, 0, 0);
     resize: none;
     height: 200px;
@@ -396,7 +419,7 @@ textarea {
 }
 
 .travel p {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     padding-top: 2px;
     line-height: 1.5;
     margin-top: 0;
@@ -414,10 +437,11 @@ textarea {
     
     display: flex;
     flex-direction: row;
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     gap: 10px;
     font-weight:bolder;
     padding-top: 15px;
+    padding-bottom: 31px;
     
 }
 
@@ -426,9 +450,7 @@ textarea {
 }
 
 
-.more-info-btn {
-    margin-top: 30px;
-}
+
 
 @media screen and (max-width: 1500px) {
     
@@ -466,7 +488,7 @@ textarea {
     
         display: flex;
         flex-direction: column;
-        font-family: 'Lora', serif;
+        font-family: var(--body-font);
         gap: 10px;
         font-weight:bolder;
         padding-top: 15px;
@@ -488,7 +510,7 @@ textarea {
     }
 
     .box span {
-        font-family: 'Lora', serif;
+        font-family: var(--body-font);
         font-size: 1.2rem;
     
     }
@@ -520,11 +542,11 @@ textarea {
   
   /* The navigation menu links    font-family: 'Allura', cursive; */
   .sidenav a {
-    font-family: 'Lora', serif;
+    font-family: var(--body-font);
     
     text-decoration: none;
     font-size: 1.3rem;
-    color: #BBA53D;
+    color: var(--secondary-color);
     display: block;
     transition: 0.3s;
     letter-spacing: 1px;
@@ -532,7 +554,7 @@ textarea {
   
   
   .sidenav a:hover {
-    color: #ffffff;
+    color: var(--secondary-hover-color);
   }
   
   
@@ -590,7 +612,7 @@ textarea {
     }
 
     h1 {
-        font-family: 'Playfair Display', serif;
+        font-family: var(--heading-font);
         font-size: 2.5rem;
         margin-bottom: 0;
         text-align: center;
@@ -598,7 +620,7 @@ textarea {
     }
 
     .subheading {
-        font-family: 'lora', serif;
+        font-family: var(--body-font);
         font-size: 1rem;
         padding-top: 7.5px;
         padding-bottom: 0px;
@@ -617,18 +639,18 @@ textarea {
     }
 
     .date-title {
-        font-family: 'Lora', serif;
+        font-family: var(--body-font);
         font-size: 1rem;
     }
 
     .date {
-        font-family: 'Lora', serif;
+        font-family: var(--body-font);
         font-size: 2rem;
     }
     
     button {
-        background-color: #BBA53D;
-        font-family: 'lora', serif;
+        background-color: var(--secondary-color);
+        font-family: var(--body-font);
         font-size: 1.2rem;
         padding: 5px 30px;
         margin-top: 5px;
@@ -637,8 +659,8 @@ textarea {
     }
     
     button:hover {
-        background-color: #bba63dd2;
-        font-family: 'Lora', serif;
+        background-color: var(--secondary-hover-color);
+        font-family: var(--body-font);
         font-size: 1.5rem;
         padding: 5px 30px;
         margin-top: 5px;
