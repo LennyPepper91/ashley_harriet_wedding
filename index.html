@@ -179,7 +179,11 @@ document.getElementById("confettiButton").addEventListener("click", function() {
 
 /* Nav width */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "515px";
+  if (window.innerWidth <= 768) { // Adjust the breakpoint according to your needs
+    document.getElementById("mySidenav").style.width = "250px"; // Set width for mobile screens
+  } else {
+    document.getElementById("mySidenav").style.width = "515px"; // Set width for desktop screens
+  }
 }
 
 /* Set nav to 0 */

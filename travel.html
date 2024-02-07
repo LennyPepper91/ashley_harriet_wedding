@@ -51,6 +51,10 @@
     
         </div>
 
+        <div class="ham-wrapper">
+            <img src="ham-two.svg" class="ham-icon" onclick="openNav()" onclick="closeNav()">
+            </div>
+
     
 
     </header>
@@ -99,9 +103,13 @@
     </footer>
 
     <script>
-                /* Nav width */
+/* Nav width */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "515px";
+  if (window.innerWidth <= 768) { // Adjust the breakpoint according to your needs
+    document.getElementById("mySidenav").style.width = "250px"; // Set width for mobile screens
+  } else {
+    document.getElementById("mySidenav").style.width = "515px"; // Set width for desktop screens
+  }
 }
 
 /* Set nav to 0 */
