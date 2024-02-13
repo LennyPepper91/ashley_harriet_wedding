@@ -1,14 +1,15 @@
 
 :root {
     /* Colours */
-    --primary-color: #007bff;
-    --secondary-color: #BBA53D;
+    --primary-color: #F6F4F4;
+    --secondary-color: #C5AA30;
     --secondary-hover-color: #D2C274;
     --accent-color: #ffc107;
 
     /* Font pairings */
     --heading-font: 'Playfair Display', serif;
     --body-font: 'Lora', serif;
+    --accent-font: 'Cormorant Garamond', serif;
     
 
 
@@ -89,14 +90,7 @@ body {
     width: 35px;
     text-align: center;
 }
-nav {
-    display: flex;
-    display: none;
-    
-    
-    
-    margin: 0 auto;
-}
+
 
 .slide-nav {
     background-color: black;
@@ -104,6 +98,12 @@ nav {
     height: 100%;
     width: 15%;
     z-index: 9999;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
@@ -115,13 +115,13 @@ ul {
     padding: 0;
     
     
-    gap: 4rem;
+    gap: 6rem;
 }
 
 ul li {
     list-style-type: none;
     font-family: var(--body-font);
-    color: black;
+    color: var(--secondary-color);
     
 }
 
@@ -132,7 +132,9 @@ ul li a:hover {
 
 ul li a {
     text-decoration: none;
-    color: black;
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    
     font-size: 1.1rem;
     
 }
@@ -143,6 +145,8 @@ h1 {
     font-size: 4rem;
     margin-bottom: 0;
     text-align: center;
+    
+    font-weight: 500;
 
 }
 
@@ -180,14 +184,14 @@ h1 {
 
 
 .date-wrapper {
-    padding-top: 100px;
+    padding-top: 200px;
     display: flex;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
     max-width: 1600px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 
 }
 
@@ -199,23 +203,24 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('counter.jpg');
+    background-image: url('counter_web.jpg');
     background-size: cover;
     background-position: center;
     max-width: 1600px;
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding: 100px 0;
+    
     margin: 0 auto;
-    margin-bottom: 150px;
+    margin-bottom: 300px;
 
 }
 
 h2 {
     color: white;
     font-family: var(--heading-font);
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     text-align: center;
     margin: 10px;
+    font-weight: 500;
 }
 
 .counter-wrapper p {
@@ -223,26 +228,27 @@ h2 {
     font-family: var(--body-font);
     text-align: center;
     color: white;
+    font-size: 1.2rem;
 }
 
 button {
-    background-color: var(--secondary-color);
-    font-family: var(--body-font);
-    font-size: 1.2rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-family: var(--accent-font);
+    font-size: 1.4rem;
     padding: 5px 30px;
     margin-top: 5px;
     cursor: pointer;
-    
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s, background-color 0.3s; /* Adding transition for color and background-color */
 }
 
 button:hover {
+    color: #F9F8F8;
     background-color: var(--secondary-hover-color);
-    font-family: var(--body-font);
-    font-size: 1.2rem;
-    padding: 5px 30px;
-    margin-top: 5px;
-    cursor: pointer;
-    
 }
 
 .number-wrapper {
@@ -286,6 +292,9 @@ button:hover {
 h3 {
     font-family: var(--heading-font);
     font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
     
     
     
@@ -299,17 +308,18 @@ h3 {
 
 .more-info-btn {
     text-align: center;
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .travel-info {
     display: flex;
     flex-direction: column;
+    
 }
 
 footer {
-    height: 30px;
-    background-color: antiquewhite;
+    height: 45px;
+    background-color: #F9F8F8;
 }
 
 .rspv-wrapper {
@@ -317,6 +327,7 @@ footer {
     margin: 0 auto;
     padding-top: 0px;
     padding-bottom: 75px;
+    
 }
 
 
@@ -330,7 +341,7 @@ footer {
 form {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 75px;
     
     padding-bottom: 25px;
     padding-top: 50px;
@@ -347,14 +358,25 @@ label {
    
 }
 
+.travel-title {
+    padding-bottom: 50px;
+}
+
 .map-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.map-wrapper-travel {
     max-width: 1600px;
     margin: 0 auto;
+    
 }
 
 .map {
     width: 100%;
-    height: 650px;
+    height: 400px;
     margin-bottom: 75px;
     margin-top: 35px;
     
@@ -415,7 +437,7 @@ textarea {
 .travel-wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 0px;
     
 }
 
@@ -440,7 +462,7 @@ textarea {
 .airports-wrapper {
     max-width: 1400px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 125px;
 
 }
 
@@ -512,6 +534,7 @@ textarea {
         font-weight:bolder;
         padding-top: 15px;
         
+        
     }
 
     .number-wrapper {
@@ -539,11 +562,13 @@ textarea {
         text-decoration: none; 
         text-align: center;
         font-family: var(--body-font);
-        font-size: 1.2rem;
+        
     }
 
  
-   
+   nav { 
+    display: none;
+   }
 
     
 }
@@ -559,7 +584,8 @@ textarea {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: #F9F8F8; 
+    
+    background-color: var(--primary-color);
     overflow-x: hidden; 
     padding-top: 145px; 
     transition: 0.5s; 
@@ -589,7 +615,7 @@ textarea {
   
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
+    top: 10px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -677,8 +703,8 @@ textarea {
         font-size: 2rem;
     }
     
-    button {
-        background-color: var(--secondary-color);
+    button {ate-wra
+        background-color: #F9F8F8;
         font-family: var(--body-font);
         font-size: 1.2rem;
         padding: 5px 30px;
@@ -696,6 +722,36 @@ textarea {
         cursor: pointer;
         
     }
+
+    .date-wrapper {
+        padding-top: 100px;
+        
+        padding-bottom: 100px;
+    
+    }
+
+    h2 {
+        color: white;
+        font-family: var(--heading-font);
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 10px;
+        
+    }
+
+    .counter-wrapper p {
+        max-width: 1200px;
+        font-family: var(--body-font);
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .travel-title {
+        padding-bottom: 10px;
+        padding-top: 50px;
+    }
+    
 
   
 }
