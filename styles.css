@@ -11,6 +11,9 @@
     --body-font: 'Lora', serif;
     --accent-font: 'Cormorant Garamond', serif;
     
+    /* Layout */
+    --column-max-width: 1400px;
+    
 
 
   }
@@ -62,7 +65,7 @@ body {
 }
 
 .header_wrapper {
-    max-width: 1600px;
+    max-width: var(--column-max-width);
     
     margin: 0 auto;
     
@@ -191,7 +194,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1400px;
     padding-bottom: 200px;
 
 }
@@ -207,7 +210,7 @@ h1 {
     background-image: url('counter_web.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 1600px;
+    max-width: var(--column-max-width);
     padding: 100px 0;
     
     margin: 0 auto;
@@ -372,7 +375,7 @@ label {
 }
 
 .map-wrapper-travel {
-    max-width: 1600px;
+    max-width: var(--column-max-width);
     margin: 0 auto;
     
 }
@@ -438,7 +441,7 @@ textarea {
 }
 
 .travel-wrapper {
-    max-width: 1400px;
+    max-width: var(--column-max-width);
     margin: 0 auto;
     padding-top: 0px;
     
@@ -463,7 +466,7 @@ textarea {
 }
 
 .airports-wrapper {
-    max-width: 1400px;
+    max-width: var(--column-max-width);
     margin: 0 auto;
     padding-top: 125px;
 
@@ -661,7 +664,7 @@ textarea {
     }
 
     .header_wrapper {
-        max-width: 1600px;
+        max-width: var(--column-max-width);
         
         margin: 0 auto;
         
@@ -754,6 +757,27 @@ textarea {
     .travel-title {
         padding-bottom: 10px;
         padding-top: 50px;
+    }
+
+    footer {
+        margin-top: 0px;
+        height: 45px;
+        background-color: #F9F8F8;
+    }
+
+    .counter-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('counter_web.jpg');
+        background-size: cover;
+        background-position: center;
+        max-width: var(--column-max-width);
+        padding: 100px 0;
+        
+        margin: 0 auto;
+        margin-bottom: 0px;
+    
     }
     
 
